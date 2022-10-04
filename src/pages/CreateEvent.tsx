@@ -1,10 +1,11 @@
 import {TextField} from "../components/inputs";
-import {useState} from "react";
-import DatePicker from "react-modern-calendar-datepicker";
-import ReactDatePicker from "react-datepicker";
+import {useNavigate} from "react-router-dom";
 
 export function CreateEvent() {
-    const [startDate, setStartDate] = useState(new Date())
+    const navigate = useNavigate();
+    const goToEventPage = () => {
+        navigate('/event')
+    }
 
     return (
         <div className="min-h-[90vh] inline-grid md:flex items-center justify-center max-w-[1400px]">
@@ -27,7 +28,7 @@ export function CreateEvent() {
                             <TextField label="Location" />
                             <TextField label="Event Photo" />
                         </div>
-                        <button className="btn-primary hidden md:inline-flex">Next</button>
+                        <button onClick={goToEventPage} className="btn-primary hidden md:inline-flex">Next</button>
                     </div>
                 </div>
             </div>
