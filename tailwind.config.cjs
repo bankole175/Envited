@@ -6,9 +6,11 @@ module.exports = {
     colors: {
       default: '#000000',
       primary: 'rgba(36, 13, 87, 1)',
+      purple: 'rgba(132, 86, 236, 1)',
       transparent: 'transparent',
       current: 'currentColor',
       black: colors.black,
+      white: colors.white,
       darkGray: 'rgba(79, 79, 79, 1)',
       envitedGradient: 'linear-gradient(90deg, #8456EC 3.25%, #E87BF8 100%)',
     },
